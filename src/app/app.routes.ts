@@ -1,12 +1,13 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: JS
- * Date: 06/04/2019
- * Time: 9:58
- */
-
 import {RouterModule, Routes} from '@angular/router';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroeComponent } from './components/heroes/heroe.component';
 
 
+const appRoutes: Routes = [
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'heroe/:id', component: HeroeComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'heroes' }
+];
+
+export const APP_ROUTING = RouterModule.forRoot(appRoutes);
 
