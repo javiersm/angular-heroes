@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Form } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { Heroe } from '../../interfaces/heroe.interface';
 
 @Component({
@@ -9,7 +9,9 @@ import { Heroe } from '../../interfaces/heroe.interface';
 })
 export class HeroeComponent implements OnInit {
 
-  heroe: any = {
+  // forma: Form;
+
+  heroe: Heroe = {
     nombre: '',
     bio: '',
     casa: 'Marvel'
@@ -18,6 +20,10 @@ export class HeroeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  guardar() {
+    console.log('guardar');
   }
 
 }
