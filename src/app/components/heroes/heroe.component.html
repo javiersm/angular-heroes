@@ -4,8 +4,11 @@
 <hr>
 
 <button class="btn btn-outline-danger" [routerLink]="['/heroes']">Regresar</button>
-<br>
-<br>
+
+<button (click)="agregarNuevo(forma)"
+        type="button"
+        class="btn btn-outline-success">Nuevo héroe</button>
+<br><br>
 
 <div class="row  animated fadeIn fast">
   <div class="col-md-12">
@@ -33,7 +36,7 @@
 
       <div class="form-group">
         <label>Bio</label>
-        <textarea  [(ngModel)]="heroe.bio" class="form-control" name="bio" cols="30" rows="10"></textarea>
+        <textarea  [(ngModel)]="heroe.bio" class="form-control" name="bio" cols="30" rows="2"></textarea>
       </div>
 
 
@@ -46,6 +49,7 @@
 
     {{ forma.valid }}
     <hr>
+    {{ id }}
     <pre>
       <!--{{ forma | json }}-->
     </pre>
