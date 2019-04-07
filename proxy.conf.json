@@ -1,0 +1,7 @@
+{
+  "": {
+    "target": "https://heroes-62867.firebaseio.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
