@@ -33,7 +33,7 @@
 
       <div class="form-group">
         <label>Bio</label>
-        <textarea  [ngModel]="heroe.bio" class="form-control" name="bio" cols="30" rows="10"></textarea>
+        <textarea  [(ngModel)]="heroe.bio" class="form-control" name="bio" cols="30" rows="10"></textarea>
       </div>
 
 
@@ -45,6 +45,11 @@
     </form>
 
     {{ forma.valid }}
+    <hr>
+    <pre>
+      <!--{{ forma | json }}-->
+    </pre>
 
+    http://localhost:4200/heroe/nuevo
   </div>
 </div>
